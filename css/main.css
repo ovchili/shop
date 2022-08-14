@@ -137,4 +137,91 @@ body {
   .top__link {
     font-size: 0.875rem;
   }
+}
+.for {
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+.for__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+.for__box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+}
+.for__item {
+  font-size: 2.125rem;
+  font-weight: 600;
+  line-height: 41px;
+  color: #fff;
+  height: 415px;
+  text-decoration: none;
+  text-transform: uppercase;
+  grid-column: 4 span;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.for__item_big {
+  grid-column: 6 span;
+}
+.for__item_1 {
+  background-image: url(../img/for_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.for__item_2 {
+  background-image: url(../img/for_2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.for__item_3 {
+  background-image: url(../img/for_3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.for__item_4 {
+  background-image: url(../img/for_4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.for__item_5 {
+  background-image: url(../img/for_5.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .for__box {
+    gap: 30px;
+  }
+  .for__item {
+    height: 268px;
+  }
+}
+@media (max-width: 768px) {
+  .for {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .for__heading {
+    font-size: 1.5rem;
+  }
+  .for__box {
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .for__item {
+    height: 375px;
+    font-size: 1.75rem;
+  }
+  .for__item_big {
+    height: 244px;
+    grid-column: 4 span;
+  }
 }/*# sourceMappingURL=main.css.map */
