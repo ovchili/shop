@@ -260,6 +260,8 @@ body {
   gap: 11px;
 }
 .product__heading {
+  color: #000;
+  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
