@@ -51,15 +51,23 @@
             text-decoration-line: line-through
             color: #888888
 
+.link
+    color: #000
+    &__catalog
+        padding-top: 39px
+@media (max-width: 1024px)
+    .product
+        &__box
+            row-gap: 39px
 @media (min-width: 768px) and ( max-width: 835px)
-.product
-    &__item
-        width: 350px
+    .product
+        &__item
+            width: 350px
 
 @media (max-width: 768px)
     .product
         padding-top: 16px
-        padding-bottom: 16px
+        padding-bottom: 32px
         &__head
             font-size: 1.5rem
             line-height: 29px
@@ -83,3 +91,6 @@
         &__heading
             font-size: 1.5rem
             line-height: 29px
+    .link__catalog .link
+        display: block
+        text-align: center
