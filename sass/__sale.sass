@@ -1,0 +1,83 @@
+.sale
+    padding-top: 32px
+    padding-bottom: 32px
+    &__heading
+        font-style: normal
+        font-weight: 600
+        font-size: 48px
+        line-height: 59px
+        margin-bottom: 32px
+
+.product
+    padding-top: 32px
+    padding-bottom: 64px
+    &__head
+        font-weight: 600
+        font-size: 3rem
+        line-height: 59px
+        margin-bottom: 32px
+    &__box
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 56px
+    &__item
+        width: 379px
+        display: flex
+        flex-direction: column
+        gap: 11px
+    &__heading
+        font-style: normal
+        font-weight: 500
+        font-size: 1.5rem
+        line-height: 29px
+    &__text
+        font-weight: 400
+        font-size: 0.875rem
+        line-height: 17px
+        color: #888888
+    &__img
+        width: 100%
+    &__price
+        font-weight: 500
+        font-size: 1.5rem
+        line-height: 29px
+        &_box
+            display: flex
+            gap: 32px
+        &_sale
+            text-decoration-line: line-through
+            color: #888888
+
+@media (min-width: 768px) and ( max-width: 835px)
+.product
+    &__item
+        width: 350px
+
+@media (max-width: 768px)
+    .product
+        padding-top: 16px
+        padding-bottom: 16px
+        &__head
+            font-size: 1.5rem
+            line-height: 29px
+        &__box
+            justify-content: center
+            gap: 33px
+        &__item
+            max-width: 379px
+        &__heading
+            font-size: 1.125rem
+            line-height: 22px
+        &__text
+            font-size: 0.875rem
+            line-height: 17px
+        &__price
+            font-size: 1.125rem
+            line-height: 22px
+    .sale
+        padding-top: 16px
+        padding-bottom: 16px
+        &__heading
+            font-size: 1.5rem
+            line-height: 29px

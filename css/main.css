@@ -145,7 +145,7 @@ body {
 .for__heading {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 59px;
   margin-bottom: 32px;
 }
@@ -223,5 +223,110 @@ body {
   .for__item_big {
     height: 244px;
     grid-column: 4 span;
+  }
+}
+.sale {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.sale__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+
+.product {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.product__head {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 59px;
+  margin-bottom: 32px;
+}
+.product__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 56px;
+}
+.product__item {
+  width: 379px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.product__heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+.product__text {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17px;
+  color: #888888;
+}
+.product__img {
+  width: 100%;
+}
+.product__price {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+.product__price_box {
+  display: flex;
+  gap: 32px;
+}
+.product__price_sale {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #888888;
+}
+
+.product__item {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .product__head {
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  .product__box {
+    justify-content: center;
+    gap: 33px;
+  }
+  .product__item {
+    max-width: 379px;
+  }
+  .product__heading {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+  .product__text {
+    font-size: 0.875rem;
+    line-height: 17px;
+  }
+  .product__price {
+    font-size: 1.125rem;
+    line-height: 22px;
+  }
+  .sale {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .sale__heading {
+    font-size: 1.5rem;
+    line-height: 29px;
   }
 }/*# sourceMappingURL=main.css.map */
