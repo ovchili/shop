@@ -1,0 +1,64 @@
+.catalog
+    padding-top: 64px
+    &__bread
+
+        margin-bottom: 41px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+ul.breadcrumb
+    list-style: none
+
+ul.breadcrumb li
+    display: inline
+    font-size: 1rem
+
+ul.breadcrumb li+li:before
+    padding: 10px
+    color: black
+    content: "/\00a0"
+
+ul.breadcrumb li a
+    color: #000
+    text-decoration: none
+
+ul.breadcrumb li a:hover
+    text-decoration: underline
+.select_box
+    display: grid
+    grid-template-areas: "select"
+    align-items: center
+
+    & select
+        grid-area: select
+        outline: none
+        appearance: none
+        width: 288px
+        height: 41px
+        border: 1px solid #C4C4C4
+        border-radius: 20px
+        padding-left: 14px
+        padding-right: 14px
+        font-size: 1rem
+
+    &:after
+        margin: 15px 22px 15px 0
+        grid-area: select
+        content: ""
+        width: 20px
+        height: 11px
+        background-color: #000
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%)
+        justify-self: end
+
+@media (max-width: 768px)
+    .catalog
+        padding-top: 32px
+        &__bread
+            margin-bottom: 32px
+            row-gap: 16px
+    ul.breadcrumb li
+        font-size: 0.875rem
+    .select select
+        font-size: 0.875rem
