@@ -1,0 +1,241 @@
+
+@-webkit-keyframes wobble-hor-bottom
+  0%,
+  100% 
+    -webkit-transform: translateX(0%)
+    transform: translateX(0%)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+
+  15% 
+    -webkit-transform: translateX(-30px) rotate(-6deg)
+    transform: translateX(-30px) rotate(-6deg)
+
+  30% 
+    -webkit-transform: translateX(15px) rotate(6deg)
+    transform: translateX(15px) rotate(6deg)
+
+  45% 
+    -webkit-transform: translateX(-15px) rotate(-3.6deg)
+    transform: translateX(-15px) rotate(-3.6deg)
+
+  60% 
+    -webkit-transform: translateX(9px) rotate(2.4deg)
+    transform: translateX(9px) rotate(2.4deg)
+
+  75%
+    -webkit-transform: translateX(-6px) rotate(-1.2deg)
+    transform: translateX(-6px) rotate(-1.2deg)
+
+@keyframes wobble-hor-bottom
+    0%,
+    100%
+        -webkit-transform: translateX(0%)
+        transform: translateX(0%)
+        -webkit-transform-origin: 50% 50%
+        transform-origin: 50% 50%
+
+    15%
+        -webkit-transform: translateX(-30px) rotate(-6deg)
+        transform: translateX(-30px) rotate(-6deg)
+
+    30%
+        -webkit-transform: translateX(15px) rotate(6deg)
+        transform: translateX(15px) rotate(6deg)
+
+    45%
+        -webkit-transform: translateX(-15px) rotate(-3.6deg)
+        transform: translateX(-15px) rotate(-3.6deg)
+
+    60%
+        -webkit-transform: translateX(9px) rotate(2.4deg)
+        transform: translateX(9px) rotate(2.4deg)
+
+    75%
+        -webkit-transform: translateX(-6px) rotate(-1.2deg)
+        transform: translateX(-6px) rotate(-1.2deg)
+
+.cart
+    padding-top: 64px
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    gap: 32px
+    &__box
+        grid-column: 8 span
+    &__header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 14px
+        &_title
+            font-size: 1rem
+            line-height: 20px
+    &__item
+        border-top: 0.5px solid #CACDD8
+        display: flex
+        padding: 32px 0
+        justify-content: space-between
+        align-items: flex-start
+        &_box
+            display: flex
+            justify-content: space-between
+            gap: 31px
+        &_text
+            display: flex
+            flex-direction: column
+            gap: 15px
+        &_heading
+            font-size: 1.5rem
+            font-weight: 500
+        &_descr
+            font-weight: 400
+            font-size: 0.875rem
+            line-height: 17px
+            color: #888888
+            width: 276px
+        &_price
+            font-weight: 500
+            font-size: 1rem
+            line-height: 20px
+        &_link
+            font-weight: 400
+            font-size: 0.875rem
+            line-height: 210%
+            color: #000
+            &s
+                display: flex
+                gap: 30px
+    &__input
+        width: 71px
+        height: 51px
+        background: #F7F6F6
+        border-radius: 6px
+        border: none
+        outline: none
+        padding-left: 25px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 210%
+        &_box
+            position: relative
+    &__order
+        background: #F7F6F6
+        border-radius: 20px
+        grid-column: 4 span
+        display: flex
+        align-items: center
+        flex-direction: column
+        &_heading
+            margin-top: 42px
+            margin-bottom: 35px
+        &_input
+            width: 288px
+            background: transparent
+            border: none
+            outline: none
+            border-bottom: 1px solid #CACDD8
+            &::placeholder
+                font-weight: 400
+                font-size: 14px
+                line-height: 17px
+                color: #000
+            &box
+                display: flex
+                flex-direction: column
+                gap: 41px
+        &_sum
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            &box
+                margin-top: 64px
+                display: flex
+                flex-direction: column
+                align-items: center
+                text-align: center
+                gap: 18px
+            & span
+                font-weight: 500
+        &_btn
+            width: 290px
+            padding: 10px 0
+            border: 1px solid #000
+            border-radius: 50px
+            color: #000
+            text-decoration: none
+            transition: all 0.3s
+            margin-bottom: 148px
+            &:hover
+                -webkit-animation: wobble-hor-bottom 0.8s both
+                animation: wobble-hor-bottom 0.8s both
+                color: #fff
+                background-color: #000
+    &__btn
+        width: 200px
+        display: block
+        border: 1px solid #000
+        padding: 10px 0
+        text-decoration: none
+        font-size: 0.875rem
+        line-height: 17px
+        color: #000
+        border-radius: 50px
+        transition: all 0.3s
+        &:hover
+            color: #fff
+            background: #000
+        &box
+            display: flex
+            align-items: center
+            text-align: center
+            gap: 10px
+
+.link
+    &__cart
+        margin: 32px 0 64px
+.btn
+    display: block
+    border: none
+    background-color: transparent
+    cursor: pointer
+    &__box
+        position: absolute
+        bottom: 10px
+        right: 15px
+    &_down
+        transform: rotate(180deg)
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    appearance: none
+    margin: 0
+
+@media (max-width: 1200px)
+    .cart
+        grid-template-columns: repeat(8, 1fr)
+
+@media (max-width: 768px)
+    .cart
+        grid-template-columns: repeat(4,1fr)
+        gap: 48px
+        &__header
+            display: none
+        &__box
+            margin-top: 92px
+            grid-column: 4 span
+        &__item
+            padding: 18px 0 24px
+            &_img
+                display: none
+            &_heading
+                font-size: 1.125rem
+            &_descr
+                font-size: 0.75rem
+            &_price
+                font-size: 0.75rem
+        &__btn
+            font-size: 0.75rem
+    .link
+        &__cart
+            text-align: center
+            margin: 32px 0

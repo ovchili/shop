@@ -23,9 +23,25 @@
         row-gap: 56px
     &__item
         width: 379px
+        padding: 15px
         display: flex
         flex-direction: column
         gap: 11px
+        transition: all .3s
+        position: relative
+        &:hover
+            transform: scale(1.05)
+            border: 0.5px solid #888
+        &:hover .product__icons
+            opacity: 1
+    &__icons
+        position: absolute
+        right: 27px
+        top: 27px
+        display: flex
+        gap: 26px
+        opacity: 0
+        transition: all .3s
     &__heading
         color: #000
         text-decoration: none
