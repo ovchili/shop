@@ -24,7 +24,7 @@ Demo: https://ovchili.github.io/shop/
 - Breadcrumb (при нажатии переносит на главную страницу)
 - Карточка товара (при наведении увеличивается)
 - Footer
-- 
+
 ![Каталог товаров](https://github.com/ovchili/shop/assets/111198509/97176f49-7129-423d-aad9-7b482716bdcf)
 
 ### Корзина
