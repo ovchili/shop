@@ -2,6 +2,7 @@
 
 Demo: https://ovchili.github.io/shop/
 
-## Особенности реализации
- Реализован с использованием HTML, CSS(SASS). 
+![Превью сайта](https://github.com/ovchili/shop/assets/111198509/a6cfbb1b-10a1-4a50-8c49-145788f784d6)
+
+## Структура и функционал приложения
 
